@@ -2,6 +2,10 @@ var paused_count =0;
 var resumed_count = 0;
 var launched_count = 0;
 
+var key = “pen”;
+var value = “blue”;
+
+
     function onLoad() {
         document.addEventListener("deviceready", onDeviceReady, false);
 		console.log("device ready");
@@ -9,5 +13,9 @@ var launched_count = 0;
 
     function onDeviceReady() {
 		alert("device ready");
-
+        
+        window.localStorage.setItem( key, value );
+        var key1 = “pen”;
+        var value1 = window.localStorage.getItem(key);
+        alert(value1);
     }
