@@ -2,8 +2,8 @@ var paused_count =0;
 var resumed_count = 0;
 var launched_count = 0;
 
-var key = “pen”;
-var value = “blue”;
+var key="pen";
+var value="blue";
 
 
     function onLoad() {
@@ -12,10 +12,8 @@ var value = “blue”;
     }
 
     function onDeviceReady() {
-		alert("device ready");
-        
         window.localStorage.setItem( key, value );
-        var key1 = “pen”;
+        var key1 = "pen";
         var value1 = window.localStorage.getItem(key);
         alert(value1);
     }
