@@ -13,7 +13,24 @@
 <body onload="onLoad()">
   
   	<h1>Event counts</h1>
+    
+<script>
+<p id="demo"></p>
+var nutritional='{"ProductName":"SNICKERS & Hazelnut 4 Bar Multipack 196g","Energy(KJ)":"2047kj/100g","Energy(KCAL)":"489kcal/100g","Fat":"23.9g/100g","Saturates":"9.0g/100g","Carbohydrate":"59.5g/100g","Sugars":"50.4g/100g","Protein":"8.1g/100g","Salt":"0.59/100g"}';
 
+var obj = JSON.parse(nutritional);
+
+document.getElementById("demo").innerHTML =
+obj.ProductName + "<br>" +
+obj.Energy(KJ) + "<br>" +
+obj.Energy(KCAL) + "<br>" +
+obj.Fat + "<br>" +
+obj.Saturates + "<br>" +
+obj.Carbohydrate + "<br>" +
+obj.Sugar + "<br>" +
+obj.Protein + "<br>" +
+obj.Salt ;
+</script>
 
 </body>
 </html>
